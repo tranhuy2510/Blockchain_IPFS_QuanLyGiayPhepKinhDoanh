@@ -1,0 +1,277 @@
+#root {
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+  background: #272828aa;
+  border-radius: 12px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+button {
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+button:hover:not(:disabled) { transform: translateY(-3px); }
+button:active { transform: translateY(-1px) scale(0.995); }
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.container {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* dọc */
+  align-items: center;     /* ngang */
+  text-align: left;      /* ngang */
+  height: auto;           /* toàn màn hình */
+}
+
+
+
+ /* kjasdhf} */
+ /* ====== RESET CƠ BẢN ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  min-height: 100vh;
+
+}
+
+/* ====== KHUNG CHUNG ====== */
+.admin-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px auto 60px auto;   /* 🔹 Sát lên trên */
+  text-align: center;
+  background: #242424;
+  padding: 40px 50px;/* Thêm khoảng cách trong */
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);/* Bóng nhẹ */
+
+  min-height: auto;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+/* ====== TIÊU ĐỀ ====== */
+.main-title,
+.user-title,
+.admin-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.admin-title {
+  color: #4cafef;
+  letter-spacing: 0.5px;
+}
+
+.list-title {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #b2cfff;
+}
+
+/* ====== NÚT CHUNG ====== */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+/* Nút kết nối ví */
+.connect-btn {
+  background-color: #4cafef;
+  color: white;
+  margin-top: 20px;
+}
+
+.connect-btn:hover {
+  background-color: #318ce7;
+  transform: translateY(-1px);
+}
+
+
+/* ====== ADMIN DASHBOARD ====== */
+.admin-info {
+  margin: 10px 0 20px;
+}
+
+.admin-account {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.admin-role {
+  color: #f1c40f;
+  font-weight: 600;
+}
+
+.account-text {
+  color: #9ecbff;
+}
+
+/* ====== BẢNG DỮ LIỆU ====== */
+.license-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #2c2c2c;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 15px;
+  
+}
+
+.license-table thead {
+  background: #3b3b3b;
+  color: #00bcd4;
+}
+
+.license-table th,
+.license-table td {
+  padding: 14px 10px;
+  text-align: center;
+  border-bottom: 2px solid #404040;
+}
+
+.license-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ====== LIÊN KẾT IPFS ====== */
+.ipfs-link {
+  color: #4cafef;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ipfs-link:hover {
+  color: #81d4fa;
+  text-decoration: underline;
+}
+
+/* ====== TRẠNG THÁI ====== */
+.status-cell {
+  font-weight: bold;
+}
+
+.status-chờduyệt {
+  color: #ffc107;
+}
+
+.status-đãduyệt {
+  color: #00e676;
+}
+
+.status-bịtừchối {
+  color: #f44336;
+}
+
+/* ====== HÀNH ĐỘNG ====== */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  
+}
+
+.approve-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.approve-btn:hover {
+  background-color: #34d058;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.reject-btn:hover {
+  background-color: #f05060;
+}
+
+.reviewed-by {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ====== CHI TIẾT NHỎ ====== */
+.loading-text {
+  color: #bbb;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.company-cell {
+  text-align: left;
+}
+
+.submitter-cell {
+  color: #9ecbff;
+}
+
+.table-container {
+  max-height: 449px;         /* chiều cao tối đa hiển thị trước khi cuộn */
+  overflow-y: auto;          /* cuộn theo trục dọc */
+  overflow-x: hidden;        /* ẩn cuộn ngang (nếu có) */
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Cố định header */
+.table-container table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #222;    /* cùng màu với header bảng */
+  z-index: 2;
+}
